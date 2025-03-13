@@ -5,8 +5,16 @@
     box-sizing: border-box;  
 } 
 
+:root {
+    --background-color: #09122C;
+    --cor-hover: #282A3A;
+    --secondary-color: #B17F59;
+    --Cor-das-letras: #F5EFE7;
+    
+}
+
 header {
-    background-color: #121212;
+    background-color: var(--background-color);
     padding: 15px 15px 15px 5%;
     text-align: left;
 }
@@ -15,7 +23,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: left;
-    gap: 25px;
+    gap: 30px;
 }
 
 nav ul li {
@@ -23,7 +31,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #22D4FD;
+    color: var(--secondary-color);
     text-decoration: none;
     font-size: 15px;
     font-family: "Krona One", sans-serif;
@@ -32,15 +40,15 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #474949;
-    color: white;
+    background-color: var(--cor-hover);
+    color: var(--Cor-das-letras);
     border-radius: 8px;
 }
 
 body{
     /* height: 100vh; */
-    background-color: #040405;
-    color: #FFFFFF;
+    background-color: var(--background-color);
+    color: var(--Cor-das-letras);
     font-size: large;
     font-family: serif;
     box-sizing: border-box;
@@ -52,7 +60,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 4% 5%; 
+    margin: 4% 5% 10% ; 
 }
 
 .apresentacao{
@@ -73,7 +81,7 @@ body{
 }
 
 h1{
-    color: white;
+    color: var(--Cor-das-letras);
     padding: 10px ;
     margin: 0px ;
     text-align: center;
@@ -87,20 +95,19 @@ p{
 }
 
 .tituloDestaque{
-    color: #B6C649;
+    color: var(--secondary-color);
     font-family: "Imperial Script", cursive;
     font-weight: 600;
     font-style: normal;
 }
 
 strong{
-    color: #B6C649;
+    color: var(--secondary-color);
 }
 
 a{
     font-weight: bold;
-    color: #bd1414;
-    color: #22D4FD;
+    color: var(--secondary-color);
     padding-top: 5px;  
 }
 .redesSociais{
@@ -116,7 +123,7 @@ a{
     font-weight: 400;
 }
 .redesSociais__link:hover {
-    background-color: #272727;
+    background-color: var(--cor-hover);
     color: #22D4FD;
     transform: scale(1.05);
     transition: 0.3s ease-in-out;
@@ -125,6 +132,7 @@ a{
 
 .redesSociais__link {
     border: 2px solid #22D4FD;
+    color: #22D4FD;
     width: 280px;
     padding: 15px 0px;
     text-align: center;
@@ -147,12 +155,14 @@ a{
 }
 
 .rodape{
-    color: black;
-    background-color: #22D4FD;
+    color: var(--Cor-das-letras);
+    background-color: var(--background-color);
     padding: 15px;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 525;
     border-radius: 0%;
+    margin-bottom: 0%;
     margin: 0%;
+
 }
