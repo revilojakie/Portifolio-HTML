@@ -7,7 +7,7 @@
 
 header {
     background-color: #121212;
-    padding: 15px 0;
+    padding: 15px 15px 15px 5%;
     text-align: left;
 }
 
@@ -25,19 +25,20 @@ nav ul li {
 nav ul li a {
     color: #22D4FD;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
+    font-family: "Krona One", sans-serif;
     padding: 10px 15px;
     transition: 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #1aa3cc;
+    background-color: #474949;
     color: white;
     border-radius: 8px;
 }
 
 body{
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #040405;
     color: #FFFFFF;
     font-size: large;
@@ -51,7 +52,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10% 10%; 
+    margin: 4% 5%; 
 }
 
 .apresentacao{
@@ -98,15 +99,16 @@ strong{
 
 a{
     font-weight: bold;
-    color: #D16666;
-    color: #22D4FD;  
+    color: #bd1414;
+    color: #22D4FD;
+    padding-top: 5px;  
 }
 .redesSociais{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    gap: 32px; 
+    gap: 30px; 
 }
 
 .redesSociais__titulo{
@@ -114,20 +116,27 @@ a{
     font-weight: 400;
 }
 .redesSociais__link:hover {
-    background-color: #22D4FD;
-    color: white;
+    background-color: #272727;
+    color: #22D4FD;
     transform: scale(1.05);
     transition: 0.3s ease-in-out;
+    
 }
 
 .redesSociais__link {
     border: 2px solid #22D4FD;
     width: 280px;
+    padding: 15px 0px;
     text-align: center;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
+
 .imagem {
     width: 300px;
     height: 400px;
@@ -137,3 +146,13 @@ a{
     margin: 0 auto;
 }
 
+.rodape{
+    color: black;
+    background-color: #22D4FD;
+    padding: 15px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 525;
+    border-radius: 0%;
+    margin: 0%;
+}
