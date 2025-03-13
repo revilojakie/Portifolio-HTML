@@ -55,7 +55,7 @@ body{
 }
 
 .apresentacao{
-    width: 615px;
+    width: 675px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -103,10 +103,18 @@ a{
 }
 .redesSociais{
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px; 
+}
+
+.redesSociais__titulo{
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
 }
 .redesSociais__link:hover {
-    background-color: #1aa3cc;
+    background-color: #22D4FD;
     color: white;
     transform: scale(1.05);
     transition: 0.3s ease-in-out;
@@ -116,7 +124,7 @@ a{
     border: 2px solid #22D4FD;
     width: 280px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 8px;
     font-size: 24px;
     text-decoration: none;
 }
