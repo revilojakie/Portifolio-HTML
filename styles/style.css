@@ -195,6 +195,9 @@ a{
     .rodape{
         text-align: right;
     }
-
+    .imagem{    
+        width: 75%;
+        height: 60%;
+    }
 }
   
