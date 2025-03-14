@@ -156,18 +156,32 @@ a{
 }
 
 .rodape{
-    color: var(--Cor-das-letras);
+    color: #22D4FD;
     background-color: var(--background-color);
     padding: 15px;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 525;
+    text-align: right;
+    font-family: "Krona One", sans-serif;
+    font-weight: 200;
     border-radius: 0%;
     margin-bottom: 0%;
     margin: 0%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+    .header{
+        padding: 30px 30px 15px 5%;
+    }
+    .nav ul{    
+        text-align: center;
+    }
+    .container{
+        flex-direction: column-reverse;
+        padding: 3%;
+    }
+    .apresentacao{
+        width: auto;
+    }
     
+
 }
   
