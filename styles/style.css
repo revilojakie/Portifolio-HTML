@@ -169,19 +169,32 @@ a{
 
 @media (max-width: 1200px) {
     .header{
-        padding: 30px 30px 15px 5%;
+        padding: 0%;
+    
+        flex-direction: column;
+        width: 100%;
+    
     }
     .nav ul{    
-        text-align: center;
+        text-align: left;
+        gap: 2px;
+        padding: 0%;
+        flex-direction: column;
+        }
+    .nav ul li a{
+        padding: 2%;
+        font-size: 1rem;
     }
     .container{
         flex-direction: column-reverse;
         padding: 3%;
     }
     .apresentacao{
-        width: auto;
+        width: 100%;
     }
-    
+    .rodape{
+        text-align: right;
+    }
 
 }
   
