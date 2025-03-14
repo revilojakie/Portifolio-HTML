@@ -33,7 +33,7 @@ nav ul li {
 nav ul li a {
     color: var(--secondary-color);
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1rem;
     font-family: "Krona One", sans-serif;
     padding: 10px 15px;
     transition: 0.3s;
@@ -49,7 +49,7 @@ body{
     /* height: 100vh; */
     background-color: var(--background-color);
     color: var(--Cor-das-letras);
-    font-size: large;
+    font-size: auto;
     font-family: serif;
     box-sizing: border-box;
     align-items: center;
@@ -64,19 +64,19 @@ body{
 }
 
 .apresentacao{
-    width: 675px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
 .apresentacao__titulo{
-    font-size: 30px;
+    font-size: 2rem;
     font-family: "Krona One", sans-serif;
 }
 
 .textoApresentacao{
-    font-size: 25px;
+    font-size: 1.5rem;
     font-family: "Montserrat", sans-serif; 
 }
 
@@ -96,13 +96,13 @@ p{
 
 .tituloDestaque{
     color: var(--secondary-color);
-    font-family: "Imperial Script", cursive;
-    font-weight: 600;
+    font-family: "Krona One", sans-serif;
+    font-weight: 1rem;
     font-style: normal;
+    text-decoration: none;
 }
-
-strong{
-    color: var(--secondary-color);
+.tituloDestaque:hover{
+    color: var(--Cor-das-letras);
 }
 
 a{
@@ -110,6 +110,7 @@ a{
     color: var(--secondary-color);
     padding-top: 5px;  
 }
+
 .redesSociais{
     display: flex;
     justify-content: space-between;
@@ -137,7 +138,7 @@ a{
     padding: 15px 0px;
     text-align: center;
     border-radius: 8px;
-    font-size: 25px;
+    font-size: 1.6rem;
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     display: flex;
@@ -146,8 +147,8 @@ a{
 }
 
 .imagem {
-    width: 300px;
-    height: 400px;
+    width: 30%;
+    height: 45%;
     object-fit: cover; 
     border-radius: 10%;
     display: block;
@@ -164,5 +165,9 @@ a{
     border-radius: 0%;
     margin-bottom: 0%;
     margin: 0%;
-
 }
+
+@media (max-width: 768px) {
+    
+}
+  
