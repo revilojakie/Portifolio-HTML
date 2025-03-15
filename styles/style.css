@@ -1,203 +1,199 @@
-@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Krona+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@300;400;600&display=swap');
+
 * {
     margin: 0;
-    padding: 0; 
-    box-sizing: border-box;  
-} 
+    padding: 0;
+    box-sizing: border-box;
+}
 
 :root {
     --background-color: #09122C;
-    --cor-hover: #282A3A;
+    --cor-hover: #1C1E30;
     --secondary-color: #B17F59;
-    --Cor-das-letras: #F5EFE7;
-    
+    --cor-texto: #F5EFE7;
+    --cor-destaque: #22D4FD;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--cor-texto);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
     background-color: var(--background-color);
-    padding: 15px 15px 15px 5%;
-    text-align: left;
+    padding: 15px 5%;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     gap: 30px;
-}
-
-nav ul li {
-    display: inline;
 }
 
 nav ul li a {
     color: var(--secondary-color);
     text-decoration: none;
     font-size: 1rem;
-    font-family: "Krona One", sans-serif;
+    font-family: 'Krona One', sans-serif;
     padding: 10px 15px;
     transition: 0.3s;
 }
 
 nav ul li a:hover {
     background-color: var(--cor-hover);
-    color: var(--Cor-das-letras);
+    color: var(--cor-texto);
     border-radius: 8px;
 }
 
-body{
-    /* height: 100vh; */
-    background-color: var(--background-color);
-    color: var(--Cor-das-letras);
-    font-size: auto;
-    font-family: serif;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 4% 5% 10% ; 
+    margin: 4% 5% 10%;
 }
 
-.apresentacao{
+.apresentacao {
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
-.apresentacao__titulo{
-    font-size: 2rem;
-    font-family: "Krona One", sans-serif;
+.apresentacao__titulo {
+    font-size: 2.5rem;
+    font-family: 'Krona One', sans-serif;
+    color: var(--cor-texto);
 }
 
-.textoApresentacao{
-    font-size: 1.5rem;
-    font-family: "Montserrat", sans-serif; 
-}
-
-h1{
-    color: var(--Cor-das-letras);
-    padding: 10px ;
-    margin: 0px ;
-    text-align: center;
-}
-
-p{
-    margin: 10px;
-    padding: 10px;
-    text-align: justify;
-    border-radius: 10%;
-}
-
-.tituloDestaque{
-    color: var(--secondary-color);
-    font-family: "Krona One", sans-serif;
-    font-weight: 1rem;
-    font-style: normal;
+.tituloDestaque {
+    color: var(--cor-destaque);
     text-decoration: none;
-}
-.tituloDestaque:hover{
-    color: var(--Cor-das-letras);
+    font-weight: 600;
 }
 
-a{
-    font-weight: bold;
+.tituloDestaque:hover {
+    color: var(--cor-texto);
+}
+
+.textoApresentacao {
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.experiencia, .formacao, .habilidades, .Ferramentas {
+    background-color: var(--cor-hover);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.experiencia h2, .formacao h2 {
+    font-size: 1.8rem;
+    font-family: "Krona One", sans-serif;
     color: var(--secondary-color);
-    padding-top: 5px;  
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-.redesSociais{
+
+.experiencia ul, .formacao ul, .habilidades ul , .Ferramentas ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experiencia li, .formacao li, .habilidades li , .Ferramentas li {
+    font-size: 1.2rem;
+    font-family: "Open Sans", sans-serif;
+    color: var(--Cor-das-letras);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.experiencia li:hover, .formacao li:hover, .habilidades li:hover .Ferramentas li:hover {    
+    transform: scale(1.02);
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+.experiencia p, .formacao p .habilidades p, .Ferramentas p {
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    color: var(--Cor-das-letras);
+    margin-top: 5px;
+    text-align: justify;
+}
+
+.redesSociais {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    gap: 30px; 
+    gap: 20px;
 }
 
-.redesSociais__titulo{
-    font-family: "Krona One", sans-serif;
-    font-weight: 400;
-}
-.redesSociais__link:hover {
-    background-color: var(--cor-hover);
-    color: #22D4FD;
-    transform: scale(1.05);
-    transition: 0.3s ease-in-out;
-    
+.redesSociais__titulo {
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.5rem;
 }
 
 .redesSociais__link {
-    border: 2px solid #22D4FD;
-    color: #22D4FD;
-    width: 280px;
-    padding: 15px 0px;
+    border: 2px solid var(--cor-destaque);
+    color: var(--cor-destaque);
+    width: 250px;
+    padding: 12px 0;
     text-align: center;
     border-radius: 8px;
-    font-size: 1.6rem;
-    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
     text-decoration: none;
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.redesSociais__link:hover {
+    background-color: var(--cor-hover);
+    transform: scale(1.05);
 }
 
 .imagem {
     width: 45%;
-    height: 50%;
-    object-fit: cover; 
     border-radius: 10%;
     display: block;
     margin: 0 auto;
 }
 
-.rodape{
-    color: #22D4FD;
-    background-color: var(--background-color);
+.rodape {
+    text-align: center;
     padding: 15px;
-    text-align: right;
-    font-family: "Krona One", sans-serif;
-    font-weight: 200;
-    border-radius: 0%;
-    margin-bottom: 0%;
-    margin: 0%;
+    background-color: var(--background-color);
+    font-family: 'Krona One', sans-serif;
+    color: var(--cor-destaque);
+    margin-top: auto;
 }
 
 @media (max-width: 1200px) {
-    .header{
-        padding: 0%;
-    
-        flex-direction: column;
-        width: 100%;
-    
-    }
-    .nav ul{    
-        text-align: left;
-        gap: 2px;
-        padding: 0%;
-        flex-direction: column;
-        }
-    .nav ul li a{
-        padding: 2%;
-        font-size: 1rem;
-    }
-    .container{
+    .container {
         flex-direction: column-reverse;
-        padding: 3%;
+        text-align: center;
     }
-    .apresentacao{
+    .apresentacao {
         width: 100%;
+        align-items: center;
     }
-    .rodape{
-        text-align: right;
-    }
-    .imagem{    
+    .imagem {
         width: 75%;
-        height: 60%;
     }
 }
+
   
