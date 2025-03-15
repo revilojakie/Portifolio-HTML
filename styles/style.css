@@ -147,8 +147,8 @@ a{
 }
 
 .imagem {
-    width: 30%;
-    height: 45%;
+    width: 45%;
+    height: 50%;
     object-fit: cover; 
     border-radius: 10%;
     display: block;
