@@ -58,7 +58,7 @@ nav ul li a:hover {
 }
 
 .apresentacao {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -84,53 +84,6 @@ nav ul li a:hover {
     font-size: 1.2rem;
     text-align: justify;
     line-height: 1.6;
-}
-
-.experiencia, .formacao, .habilidades, .Ferramentas {
-    background-color: var(--cor-hover);
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 0;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.experiencia h2, .formacao h2 {
-    font-size: 1.8rem;
-    font-family: "Krona One", sans-serif;
-    color: var(--secondary-color);
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-
-.experiencia ul, .formacao ul, .habilidades ul , .Ferramentas ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.experiencia li, .formacao li, .habilidades li , .Ferramentas li {
-    font-size: 1.2rem;
-    font-family: "Open Sans", sans-serif;
-    color: var(--Cor-das-letras);
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.experiencia li:hover, .formacao li:hover, .habilidades li:hover .Ferramentas li:hover {    
-    transform: scale(1.02);
-    background-color: var(--secondary-color);
-    color: var(--background-color);
-}
-
-.experiencia p, .formacao p .habilidades p, .Ferramentas p {
-    font-size: 1rem;
-    font-family: "Montserrat", sans-serif;
-    color: var(--Cor-das-letras);
-    margin-top: 5px;
-    text-align: justify;
 }
 
 .redesSociais {
@@ -192,8 +145,110 @@ nav ul li a:hover {
         align-items: center;
     }
     .imagem {
-        width: 75%;
+        width: 50%;
+    }
+    .listasobremim li {
+        font-size: 1rem;
+        padding: 8px;
+    }
+    .ferramentas {
+        flex-direction: column; 
+        gap: 10px;
+    }
+    .apresentacao, .experiencia, .formacao {
+        text-align: center; /* Centraliza o texto nas seções */
+    }
+
+    .imagem-container {
+        margin: 20px 0; /* Adiciona um pouco de espaçamento entre as seções e as imagens */
     }
 }
 
-  
+.titulosobremim {
+    font-size: 1.8rem;
+    font-family: "Montserrat", sans-serif;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.experiencia p, .formacao p {
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    color: var(--cor-texto);
+    margin-top: 5px;
+    text-align: justify;
+}
+
+.experiencia, .formacao, .habilidades, .ferramentas {
+    background-color: var(--cor-hover);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.listasobremim {
+    list-style: none;
+    padding-left: 0;
+}
+
+.listasobremim li {
+    font-size: 1.2rem;
+    font-family: "Open Sans", sans-serif;
+    color: var(--Cor-das-letras);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+    width: auto;
+}
+
+.listasobremim li:hover {
+    transform: scale(1.02);
+    background-color: var(--background-color)
+    
+}
+
+.ferramentas {
+    display: flex;
+    gap: 20px;  
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+}
+
+.ferramentas ul {
+    display: flex; 
+    gap: 50px;
+    flex-wrap: wrap; 
+    justify-content: center;
+    list-style: none; 
+    padding-left: 0;
+    width: 100%;
+}
+
+.imagem-container {
+    display: flex;          
+    justify-content: center; 
+    align-items: center;     
+    margin: 20px 0;          
+}
+
+.imagem {
+    width: 100%;             
+    max-width: 500px;      
+    border-radius: 10%;      
+    display: block;          
+    margin: 0 auto;          
+}
+
+.imagem1 {
+    width: 100%;
+    max-width: 700px;            
+       
+    border-radius: 10%;      
+    display: block;          
+    margin: 0 auto;          
+}
